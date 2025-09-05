@@ -1,0 +1,186 @@
+/* Simple reset */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html,body { height: 100%; font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+
+/* Page background */
+
+body {
+
+  background: linear-gradient(180deg, aliceblue 0%, lavender 100%);
+
+  color: midnightblue;
+
+  line-height: 1.6;
+
+  padding: 20px;
+
+}
+
+/* Hero / Header */
+
+.hero {
+
+  text-align: center;
+
+  padding: 40px 16px;
+
+  background: linear-gradient(135deg, navy 0%, royalblue 100%);
+
+  color: white;
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 30px rgba(16,46,77,0.15);
+
+  margin-bottom: 24px;
+
+}
+
+.hero h1 { font-size: 1.8rem; letter-spacing: 0.6px; margin-bottom: 8px; }
+
+.hero h1 span { color: gold; font-style: italic; }
+
+.hero .intro { font-weight: 600; margin-bottom: 6px; }
+
+.hero .tag { opacity: 0.95; margin-bottom: 10px; }
+
+.hero .chips { font-size: 0.9rem; background: rgba(255,255,255,0.12); display: inline-block; padding: 6px 10px; border-radius: 20px; margin-bottom: 12px; }
+
+.btn {
+
+  display: inline-block; background: gold; color: darkslategray; padding: 10px 14px; border-radius: 10px; text-decoration: none; font-weight: 700;
+
+}
+
+/* Card sections */
+
+.card {
+
+  max-width: 900px;
+
+  margin: 18px auto;
+
+  padding: 18px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 20px rgba(10,30,50,0.06);
+
+}
+
+.card h2 {
+
+  color: navy;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 10px;
+
+  display: inline-block;
+
+  padding-left: 8px;
+
+  border-left: 4px solid royalblue;
+
+}
+
+.card h3 { margin-top: 6px; color: darkslateblue; font-size: 1rem; margin-bottom: 8px; }
+
+/* Lists */
+
+.list { list-style: none; padding-left: 0; }
+
+.list li {
+
+  background: lightcyan; margin: 8px 0; padding: 10px 12px; border-radius: 8px; color: darkslategray;
+
+}
+
+/* Contact form */
+
+.contact form { display: grid; gap: 8px; }
+
+.contact label { font-size: 0.9rem; color: darkslategray; }
+
+.contact input, .contact textarea {
+
+  padding: 10px; border: 1px solid lightblue; border-radius: 8px; font-size: 0.95rem;
+
+  background: aliceblue;
+
+}
+
+.contact button {
+
+  background: linear-gradient(90deg, royalblue, navy); color: white; border: none; padding: 10px 12px; border-radius: 8px; cursor: pointer; font-weight: 600;
+
+}
+
+.contact .info { margin-top: 10px; font-size: 0.95rem; }
+
+/* Footer */
+
+.footer { text-align: center; margin-top: 22px; color: navy; }
+
+.footer .back { display: inline-block; margin-top: 8px; padding: 6px 10px; background: navy; color: white; border-radius: 8px; text-decoration: none; }
+
+/* Responsive */
+
+@media (max-width:600px) {
+
+  .hero { padding: 28px 12px; }
+
+  .card { margin: 14px 10px; padding: 14px; }
+
+  .hero h1 { font-size: 1.4rem; }
+
+}
+/* Image basic style */
+
+img {
+
+  max-width: 100%;   /* container ku fit aagum */
+
+  height: auto;      /* ratio maintain */
+
+  border-radius: 12px; /* corners round */
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* soft shadow */
+
+  display: block;
+
+  margin: 10px auto; /* center align */
+
+}
+
+/* Circle image (profile photo style) */
+
+.img-circle {
+
+  width: 180px;
+
+  height: 180px;
+
+  object-fit: cover;   /* crop pannum but neat aa */
+
+  border-radius: 50%;  /* circle shape */
+
+  border: 3px solid #1e6fb8; /* blue border */
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+
+}
+
+/* Hover effect */
+
+img:hover {
+
+  transform: scale(1.05);
+
+  transition: 0.3s ease-in-out;
+
+}
