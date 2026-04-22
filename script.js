@@ -1,4 +1,3 @@
-// Smooth scroll for anchor links
 
 document.addEventListener("click", function (e) {
 
@@ -22,7 +21,6 @@ document.addEventListener("click", function (e) {
 
 });
 
-// Simple contact form handler
 
 document.getElementById("contactForm").addEventListener("submit", function (ev) {
 
